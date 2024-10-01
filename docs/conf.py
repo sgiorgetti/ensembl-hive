@@ -185,10 +185,10 @@ html_static_path = ['_static']
 # .htaccess) here, relative to this directory. These files are copied
 # directly to the root of the documentation.
 html_extra_path = ['_build/doxygen/', 'presentations/']
-html_css_files = ['schema_doc.css']
+html_css_files = ['schema_doc.css','theme_overrides.css']
 
 # Add overriding stylesheets, searching in html_static_path
-html_style = 'theme_overrides.css'
+#html_style = 'theme_overrides.css'
 
 # If not '', a 'Last updated on:' timestamp is inserted at every page bottom,
 # using the given strftime format.
