@@ -41,7 +41,7 @@ def setup_if_needed(this_release, run_doxygen):
         upgrade_path = os.path.join(build_path, "rtd_upgrade")
         if not is_same:
             #subprocess.check_call(["./rtd_upgrade.sh", upgrade_path], stdout=sys.stdout, stderr=sys.stderr)
-            print(f"ENTERED ON_RTD and IS SAME - {os.environ["PWD"]}")
+            print(f"ENTERED ON_RTD and IS SAME - {os.environ['PWD']}")
         deb_install_path = os.path.join(upgrade_path, "root")
         #os.environ["PERL5LIB"] = os.path.pathsep.join(os.path.join(deb_install_path, _) for _ in ["usr/share/perl5/", "usr/lib/x86_64-linux-gnu/perl5/5.26/", "usr/lib/x86_64-linux-gnu/perl5/5.26/auto/"])
         #os.environ["PATH"] = os.path.join(deb_install_path, "usr/bin") + os.path.pathsep + os.environ["PATH"]
