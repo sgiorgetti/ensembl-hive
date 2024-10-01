@@ -185,6 +185,7 @@ html_static_path = ['_static']
 # .htaccess) here, relative to this directory. These files are copied
 # directly to the root of the documentation.
 html_extra_path = ['_build/doxygen/', 'presentations/']
+html_css_files = ['schema_doc.css','theme_overrides.css']
 
 # If not '', a 'Last updated on:' timestamp is inserted at every page bottom,
 # using the given strftime format.
@@ -384,9 +385,4 @@ epub_exclude_files = ['search.html']
 
 # If false, no index is generated.
 #epub_use_index = True
-
-# Add overriding stylesheets, searching in html_static_path
-# (see https://github.com/rtfd/sphinx_rtd_theme/issues/117)
-def setup(app):
-    app.add_stylesheet("theme_overrides.css")
 
