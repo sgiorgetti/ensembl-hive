@@ -51,7 +51,7 @@ def setup_if_needed(this_release, run_doxygen):
         #os.environ["PERL5LIB"] = os.path.pathsep.join(os.path.join(deb_install_path, _) for _ in ["usr/share/perl5/", "usr/lib/x86_64-linux-gnu/perl5/5.26/", "usr/lib/x86_64-linux-gnu/perl5/5.26/auto/"])
         #os.environ["PATH"] = os.path.join(deb_install_path, "usr/bin") + os.path.pathsep + os.environ["PATH"]
         #os.environ["ENSEMBL_CVS_ROOT_DIR"] = upgrade_path
-        os.environ["ENSEMBL_CVS_ROOT_DIR"] = os.listdir(os.path.join(os.environ["PWD"], os.path.pardir))
+        os.environ["ENSEMBL_CVS_ROOT_DIR"] = os.path.join(os.environ["PWD"], os.path.pardir)
     else:
         os.environ["ENSEMBL_CVS_ROOT_DIR"]   # Will raise an error if missing
     os.environ["EHIVE_ROOT_DIR"] = os.path.join(os.environ["PWD"], os.path.pardir)
