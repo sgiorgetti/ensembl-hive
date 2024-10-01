@@ -186,6 +186,9 @@ html_static_path = ['_static']
 # directly to the root of the documentation.
 html_extra_path = ['_build/doxygen/', 'presentations/']
 
+# Add overriding stylesheets, searching in html_static_path
+html_style = 'theme_overrides.css'
+
 # If not '', a 'Last updated on:' timestamp is inserted at every page bottom,
 # using the given strftime format.
 #html_last_updated_fmt = '%b %d, %Y'
@@ -387,6 +390,6 @@ epub_exclude_files = ['search.html']
 
 # Add overriding stylesheets, searching in html_static_path
 # (see https://github.com/rtfd/sphinx_rtd_theme/issues/117)
-def setup(app):
-    app.add_stylesheet("theme_overrides.css")
+#def setup(app):
+#    app.add_stylesheet("theme_overrides.css")
 
