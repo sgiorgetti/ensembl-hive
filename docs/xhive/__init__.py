@@ -43,7 +43,7 @@ def setup_if_needed(this_release, run_doxygen):
             #subprocess.check_call(["./rtd_upgrade.sh", upgrade_path], stdout=sys.stdout, stderr=sys.stderr)
             ggg = os.environ["PWD"]
             ls_cwd = os.listdir(ggg)
-            ls_cwd_up = os.listdir(os.path.join(ggg, os.path.pathsep))
+            ls_cwd_up = os.listdir(os.path.join(ggg, os.path.pardir))
             print(f"ENTERED ON_RTD and IS SAME")
             print(f"CWD: {ls_cwd}")
             print(f"CWD: {ls_cwd_up}")
